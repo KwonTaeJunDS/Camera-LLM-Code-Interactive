@@ -1,0 +1,4 @@
+{
+  "name": "Live Parallel Worlds",
+  "description": "Capture one webcam moment and let Gemini imagine four interactive p5.js worlds. Move your hands to bring them to life, with local MediaPipe tracking."
+}

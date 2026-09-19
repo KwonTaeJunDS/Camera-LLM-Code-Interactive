@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>TEST FIXTURE — Live Parallel Worlds</title>
+    <style>
+      .fixture-toolbar { position: sticky; top: 0; z-index: 100; padding: 14px 22px; border-bottom: 2px solid #eabf5b; background: #282311; color: #ffe29d; font: 11px/1.65 Consolas, monospace; }
+      .fixture-toolbar strong { display: block; font-size: 12px; letter-spacing: .02em; }
+      .fixture-controls, .fixture-metrics { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; margin-top: 7px; }
+      .fixture-toolbar button, .fixture-runtime button { border: 1px solid #857047; border-radius: 3px; padding: 6px 10px; background: #3b331d; color: #ffe29d; font: 11px/1.4 Consolas, monospace; }
+      .fixture-toolbar button:disabled { opacity: .45; }
+      .fixture-toolbar output { color: #fff; font-weight: bold; }
+      .fixture-toolbar [data-verdict='pass'] { color: #a5ebb2; }
+      .fixture-toolbar [data-verdict='fail'] { color: #ff9b96; }
+      .fixture-toolbar details { margin-top: 5px; }
+      .fixture-toolbar summary { cursor: pointer; }
+      .fixture-toolbar ol { margin: 5px 0 0; padding-left: 20px; max-height: 125px; overflow: auto; }
+      .fixture-runtime { max-width: 960px; margin: 25px auto 60px; padding: 22px; color: #dadeda; background: #141b1f; border: 1px dashed #769589; font: 12px/1.7 Consolas, monospace; }
+      .fixture-runtime h2 { margin: 0 0 5px; font: bold 16px/1.5 Consolas, monospace; }
+      .fixture-runtime p { margin: 5px 0 12px; }
+      .fixture-runtime-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+      .fixture-runtime-box { position: relative; width: 100%; height: 250px; margin-top: 16px; border: 1px solid #46565a; }
+      .fixture-runtime output { display: block; margin-top: 12px; color: #a5ebb2; }
+      .fixture-runtime-error { color: #ff9b96; }
+      .fixture-fatal { margin: 30px; padding: 20px; border: 2px solid #eabf5b; color: #ffe29d; background: #282311; white-space: pre-wrap; }
+      @media (max-width: 640px) { .fixture-toolbar { position: relative; padding: 10px; } .fixture-runtime { margin: 15px 10px; } }
+    </style>
+  </head>
+  <body>
+    <div id="fixture-root"></div>
+    <script type="module" src="/tests/browser-fixture.tsx"></script>
+  </body>
+</html>
